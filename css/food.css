@@ -1,0 +1,157 @@
+:root {
+    --padding-top: 80px;
+    --padding-bottom: 80px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Start Navbar */
+header {
+    position: relative;
+    background-image: url("../images/home_bg.jpeg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+
+.navbar img {
+    width: 80px;
+}
+
+.navbar .nav-link:hover {
+    border-bottom: 2px solid #e4b95b;
+}
+
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.landing {
+    min-height: calc(100vh);
+}
+
+.landing .main-btn {
+    border: 1px solid white;
+}
+
+.landing .main-btn:hover {
+    color: white;
+    background-color: #e4b95b;
+    transition: 1s;
+    border: none;
+}
+
+/* End Header */
+/* Start About */
+.about-content p {
+    max-width: 100%;
+    width: 80%;
+}
+
+.about-content .main-btn {
+    background-color: #383848;
+    color: white;
+}
+
+.about-content .main-btn:hover {
+    background-color: #e4b95b;
+    transition: 1s;
+
+}
+
+/* End About */
+/* Start Offers */
+.offers {
+    background: url(/images/offer-background.jpg) center center / cover fixed;
+
+}
+
+.offer p {
+    width: 90%;
+}
+
+/* End Offers */
+/* Start Menu */
+.menu img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.content-menu h3 {
+    border-bottom: 1px dashed #c2bdbd;
+}
+
+.content-menu p {
+    width: 70%;
+}
+
+.menu-button:hover {
+    background-color: #383848 !important;
+    transition: 1s;
+}
+
+/* End Menu */
+/* Start Day-time */
+.day-time {
+    background: url(/images/daytime_bg.jpeg) center center / cover fixed no-repeat;
+}
+
+/* End Day-time */
+/* Start Gallery */
+.gallery {
+    background: url(/images/offer-background.jpg);
+}
+
+.gallery img {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+
+/* End Gallery */
+/* Start Contact */
+.contact {
+    background-color: #f4f2ed;
+}
+
+.social a i {
+    background-color: #383848;
+    border-radius: 50%;
+}
+
+.social a:hover i {
+    background-color: #e4b95b;
+}
+form input,
+textarea {
+    border: none;
+    outline: none;
+    background-color: #e3e2dd;
+}
+form textarea {
+    resize: none;
+}
+form button:hover {
+    background-color: #383848 !important;
+}
+/* End Contact */
